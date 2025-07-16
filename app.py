@@ -38,7 +38,7 @@ def main():
 
     object_columns=df.select_dtypes(include=['object']).columns.tolist()
     for col in object_columns:
-        df[col]=label.transform(df[col])
+        df[col]=label.fit_transform(df[col])
 
     col=df.columns
 
