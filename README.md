@@ -32,7 +32,6 @@ This project is designed to assist traffic authorities, emergency response teams
 | Preprocessing| Pandas, LabelEncoder, StandardScaler        |
 | Deployment   | Streamlit Cloud / Localhost                 |
 --------------------------------------------------------------
----
 
 ## Dataset
 
