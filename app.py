@@ -38,14 +38,14 @@ def main():
 
     object_columns=df.select_dtypes(include=['object']).columns.tolist()
     for col in object_columns:
-        df[col]=label.fit_transform(df[col])
+        df[col]=label.transform(df[col])
 
     col=df.columns
 
     pred = st.button('PREDICT')
 
     if pred:
-        prediction = model.predict(scaler.transform([col]))
+        prediction = model.predict(scaler.transform(df))
         if prediction == 0:
             st.write("Fatal Injury")
         elif prediction == 1:
