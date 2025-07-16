@@ -3,7 +3,6 @@ import pickle
 import pandas as pd
 
 from PIL import Image
-
 def main():
     st.title("Accident Severity Prediction")
     img=Image.open("accident.jpg")
